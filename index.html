@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme de Formation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+            #container {
+            text-align: center;
+            font-size: 24px;
+        }
+        #changing-text {
+            font-weight: bold;
+            color: #ffffff;
+            border-right: 2px solid #ffffff;
+            padding-right: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #000000; }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <header class="hero">
+        <h1>Programme de Formation de <br>la filière ISITD</h1>
+        <p>Explorez les cours et semestres offerts par la filiere ISITD</p>
+        <div id="container">
+            <p id="text-container">Devenez ingénieur en <span id="changing-text"></span></p>
+        </div>
+        <div id="particles-js"></div>
+    </header>
+
+    <section class="timeline">
+        <h2>Parcours Académique</h2>
+        <div class="timeline-container">
+            <div class="timeline-item" data-semester="1" data-tooltip="Semestre 1: Début de votre aventure">
+                <h3>Semestre 1</h3>
+            </div>
+            <div class="timeline-item" data-semester="2" data-tooltip="Semestre 2: Fondements de base">
+                <h3>Semestre 2</h3>
+            </div>
+
+            <div class="timeline-item" data-semester="3" data-tooltip="Semestre 3: Connaissances avancées">
+                <h3>Semestre 3</h3>
+            </div>
+            <div class="timeline-item" data-semester="4" data-tooltip="Semestre 4: Expertise spécialisée">
+                <h3>Semestre 4</h3>
+            </div>
+
+            <div class="timeline-item" data-semester="5" data-tooltip="Semestre 5: Approfondissement">
+                <h3>Semestre 5</h3>
+            </div>
+            <div class="timeline-item" data-semester="6" data-tooltip="Semestre 6: Stage de fin d'études ">
+                <h3>Semestre 6</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="courses">
+        <div id="semester-1" class="semester">
+            <h3>Semestre 1</h3>
+            <div class="course">
+                <h4>Architecture des ordinateurs & Systèmes d'Exploitations</h4>
+                <ul>
+                    <li>Architecture des ordinateurs</li>
+                    <li>Systèmes d'Exploitation</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Mathématique pour l'Ingénieur</h4>
+                <ul>
+                    <li>Algèbre</li>
+                    <li>Analyse</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Algorithmique et Programmation</h4>
+                <ul>
+                    <li>Algorithmique</li>
+                    <li>Programmation</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Gestion électronique des documents et Documents structurés</h4>
+                <ul>
+                    <li>Gestion électronique des documents</li>
+                    <li>Documents Structurés</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Réseaux Informatiques</h4>
+                <ul>
+                    <li>Réseaux Informatiques : initiation</li>
+                    <li>Réseaux sans fils et mobiles</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Recherche Opérationnelle</h4>
+                <ul>
+                    <li>Théorie des Graphes</li>
+                    <li>Optimisation</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Économie de l'Entreprise</h4>
+                <ul>
+                    <li>Économie Générale</li>
+                    <li>Micro et Macro Économie</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Anglais et TEC 1</h4>
+                <ul>
+                    <li>Anglais I</li>
+                    <li>TEC I</li>
+                </ul>
+            </div>
+        </div>
+        <div id="semester-2" class="semester">
+            <h3>Semestre 2</h3>
+            <div class="course">
+                <h4>Analyse et Conception des Bases de Données</h4>
+                <ul>
+                    <li>Analyse et Conception des SI Relationnels</li>
+                    <li>SGBDR - SQL</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Probabilité & Statistiques</h4>
+                <ul>
+                    <li>Probabilité</li>
+                    <li>Statistiques Descriptives</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Programmation et Technologies Web</h4>
+                <ul>
+                    <li>Technologies Web</li>
+                    <li>Programmation PHP</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Algorithmique et Programmation Avancés</h4>
+                <ul>
+                    <li>Algorithmique Avancée</li>
+                    <li>Programmation Système</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>E-services et gestion de contenu d'entreprise</h4>
+                <ul>
+                    <li>E-Services</li>
+                    <li>ECM</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Gestion du capital immatériel</h4>
+                <ul>
+                    <li>Knowledge Management</li>
+                    <li>Veille Technologique</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Management pour l'ingénieur</h4>
+                <ul>
+                    <li>Management et Marketing</li>
+                    <li>Comptabilité Générale</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Anglais et TEC 2</h4>
+                <ul>
+                    <li>Anglais</li>
+                    <li>TEC II</li>
+                </ul>
+            </div>
+        </div>
+        <div id="semester-3" class="semester">
+            <h3>Semestre 3</h3>
+            <div class="course">
+                <h4>Conception et Programmation Orienté Objet</h4>
+                <ul>
+                    <li>UML</li>
+                    <li>Programmation Orienté Objet</li>
+                </ul>
+                </div>
+            <div class="course">
+                <h4>Bases de Données avancés et administration des BD</h4>
+                <ul>
+                    <li>Administration des BD</li>
+                    <li>PL/SQL</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Fondements des systèmes intelligents</h4>
+                <ul>
+                    <li>Fondaments de L'AI</li>
+                    <li>Systèmes intelligents</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Administration des systèmes</h4>
+                <ul>
+                    <li>Administration des systèmes d'exploitation</li>
+                    <li>Administration réseaux et virtualisation</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Fondements pour les sciences de données</h4>
+                <ul>
+                    <li>Languages des sciences des données</li>
+                    <li>Analyse des données</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Mathématique pour les sciences de données</h4>
+                <ul>
+                    <li>Statistiques Inférentielles</li>
+                    <li>Modéles Mathématique pour les sciences de données</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Gestion de Projet et entreprenariat</h4>
+                <ul>
+                    <li>Projet management</li>
+                    <li>Culture entrepreneuriale</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Anglais et TEC 3</h4>
+                <ul>
+                    <li>Business Engligsh</li>
+                    <li>Communication Professionnelle</li>
+                </ul>
+        </div>
+        </div>
+
+        <div id="semester-4" class="semester">
+            <h3>Semestre 4</h3>
+            <div class="course">
+                <h4>Développement avancé</h4>
+                <ul>
+                    <li>UX/UI</li>
+                    <li>Framework de dévelopment</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Développement logiciel JEE</h4>
+                <ul>
+                    <li>JAVA en API avencés</li>
+                    <li>Applicatioin n-tiers en Java</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Génie logiciel</h4>
+                <ul>
+                    <li>Ingénierie logiciel</li>
+                    <li>Ingénierie dirigée par les modèles</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Développement web et mobile</h4>
+                <ul>
+                    <li>services WEB et Micro-servies</li>
+                    <li>Développement Mobile</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Ingénierie des connaissances</h4>
+                <ul>
+                    <li>Datavisualisation</li>
+                    <li>Machine learning</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Confiance numérique</h4>
+                <ul>
+                    <li>Cyberécurité</li>
+                    <li>Cadre normatif de la sécurité</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Gouvernance et mangement des Systèmes d’Information</h4>
+                <ul>
+                    <li>Gouvernance des SI Elaboration de stratégie de transforamtion digitale</li>
+                    <li>Management de projet SI</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Méthodologie de recherche</h4>
+                <ul>
+                    <li>Methode de réalisation de PFE</li>
+                    <li>Initiation à la recherche</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="semester-5" class="semester">
+            <h3>Semestre 5</h3>
+            <div class="course">
+                <h4>Urbanisation et intégration des Systèmes d’Information</h4>
+                <ul>
+                    <li>Technologies Big Data</li>
+                    <li>Big data Analytics</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Business Intelligence</h4>
+                <ul>
+                    <li>Datawarehouse</li>
+                    <li>Projet BI</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Systèmes embarqués</h4>
+                <ul>
+                    <li>development des systèmes embarqués</li>
+                    <li>development des systèmes embarqués</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Transformation digitale et technologiques innovantes</h4>
+                <ul>
+                    <li>Bockchain</li>
+                    <li>development multi-platformes mobiles</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Systèmes Ubiquitaires</h4>
+                <ul>
+                    <li>Cloud Computing</li>
+                    <li>IoT</li>
+                </ul>
+            </div>
+            
+            <div class="course">
+                <h4>Qualité et Audit des Systèmes d’Information</h4>
+                <ul>
+                    <li>ERP</li>
+                    <li>Audit et Démarche qualité des Systèmes d'Information</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Gestion des Risques et Innovation</h4>
+                <ul>
+                    <li>Risk Management</li>
+                    <li>Gestion de l'innovation au sein de l'entreprise</li>
+                </ul>
+            </div>
+            <div class="course">
+                <h4>Développement personnel</h4>
+                <ul>
+                    <li>development personnel</li>
+                    <li>Préparation au TOEIC</li>
+                </ul>
+            </div>
+        </div>
+        <div id="semester-6" class="semester">
+            <h3>Semestre 6</h3>
+            <div class="course">
+                <h4>Stage et Projet de Fin d'Etude (PFE)                </h4>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Programme de Formation ISITD </p>
+    </footer>
+
+    <button id="scrollToTopBtn">&#8679;</button>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        const jobs = [
+            "Information Systems Engineer",
+            "Software development engineer",
+            "Software integrator consultant",
+            "IT functional architect",
+            "Cloud Computing",
+            "Web and mobile developer",
+            "Full stack developer"  
+        ];
+
+        let currentIndex = 0;
+        let isDeleting = false;
+        let text = '';
+        let typingSpeed = 100;
+        let erasingSpeed = 50;
+        let newTextDelay = 2000;
+
+        function type() {
+            const currentJob = jobs[currentIndex];
+            if (isDeleting) {
+                text = currentJob.substring(0, text.length - 1);
+            } else {
+                text = currentJob.substring(0, text.length + 1);
+            }
+
+            document.getElementById('changing-text').textContent = text;
+
+            let typeSpeed = isDeleting ? erasingSpeed : typingSpeed;
+
+            if (!isDeleting && text === currentJob) {
+                typeSpeed = newTextDelay;
+                isDeleting = true;
+            } else if (isDeleting && text === '') {
+                isDeleting = false;
+                currentIndex = (currentIndex + 1) % jobs.length;
+            }
+
+            setTimeout(type, typeSpeed);
+        }
+
+        function applyLineBreak() {
+            if (window.innerWidth <= 600) {
+                document.getElementById('text-container').innerHTML = 'Devenez ingénieur en<br><span id="changing-text"></span>';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            applyLineBreak(); 
+            setTimeout(type, newTextDelay);
+        });
+
+        window.addEventListener('resize', applyLineBreak);
+    </script>
+</body>
+
+</html>
